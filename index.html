@@ -1,458 +1,639 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Hello, World!</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">iantzzz_</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portofolio 2026</title>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Pustaka Animasi AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS Kustom -->
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6c63ff">
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Ganti dengan User ID EmailJS Anda
+        })();
+    </script>
+</head>
+<body>
+    <!-- Latar belakang animasi -->
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <!-- Layar Loading -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="logo-animation">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="logo-text">MF</text>
+                    <circle class="logo-circle" cx="50" cy="50" r="40" />
+                </svg>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/portfolio/fotoku.jpeg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Muhammad Fianto</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+            <div class="loading-text">MEMUAT</div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <nav>
+        <div class="nav-container">
+                    <a href="#" class="logo">
+                        <div class="logo-text">Portofolio<span>Saya</span></div>
+                        <div class="logo-icon"><span>{</span>PS<span>}</span></div>
+                    </a>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                <ul class="nav-links">
+                        <li><a href="#about" class="active nav-item"><span>01.</span>Tentang</a></li>
+                        <li><a href="#skills" class="nav-item"><span>02.</span>Keahlian</a></li>
+                        <li><a href="#projects" class="nav-item"><span>03.</span>Proyek</a></li>
+                        <li><a href="#testimonials" class="nav-item"><span>04.</span>Testimoni</a></li>
+                        <li><a href="#contact" class="nav-item"><span>05.</span>Kontak</a></li>
+                        <li><div class="theme-toggle"><i class="fas fa-moon"></i></div></li>
+                </ul>
+        </div>
+    </nav>
+        </div>
+    </header>
+
+    <!-- Bagian Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="hero-greeting">
+                    <span class="greeting-line"></span>
+                    <span class="greeting-text">Perkenalkan</span>
+                    <span class="greeting-line"></span>
                 </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Student|Progammer</p>
-            </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Data Diri</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                <h1><span class="highlight">Muhammad Fianto</span></h1>
+                <h2>Saya membuat <span class="typed-text"></span></h2>
+                <p>Portofolio ini menampilkan biodata, keterampilan, dan pengalaman Muhammad Fianto di dunia teknologi, khususnya pemrograman. Di dalamnya terdapat berbagai proyek coding, penguasaan bahasa pemrograman, serta kontribusinya dalam organisasi sekolah. Selain itu, portofolio ini juga mencerminkan kombinasi antara kemampuan teknis dan soft skills yang menjadikannya individu yang kompeten dan siap berkembang di dunia industri teknologi.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">Lihat Karya Saya</a>
+                    <a href="#contact" class="btn secondary-btn">Hubungi Saya</a>
                 </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/ngoding 1.jpeg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/ngoding 2.jpeg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/ngoding 3.jpeg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/hacker.jpeg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/hacker2.jpeg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/progammer.jpeg" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Nama saya Muhammad Fianto. Saya tinggal di kota Sidoarjo dan saat ini menjadi salah satu siswa kelas X di SMK Telekomunikasi Darul Ulum, jurusan Rekayasa Perangkat Lunak (RPL). Saya lahir di Sidoarjo pada 13 Mei 2008. Setelah lulus nanti, saya berencana melanjutkan kuliah di jurusan Informatika, Institut Teknologi Sepuluh Nopember (ITS) Surabaya.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Selain memiliki ketertarikan pada bidang teknologi, saya juga memiliki hobi bermain komputer, terutama coding. Bagi saya, coding membantu membiasakan diri dalam memecahkan masalah dan mencari langkah-langkah logis agar sebuah program dapat berjalan dengan baik.</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="assets/img/portfolio/fotoku.jpeg">
-                        <i class="fas fa-download me-2"></i>
-                        buka!
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/muhammad.fianto.3/" class="social-icon tooltip" aria-label="Facebook" target="_blank" data-tooltip="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/iantzzz_/" class="social-icon tooltip" aria-label="Instagram" target="_blank" data-tooltip="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.link/bd45f6" class="social-icon tooltip" aria-label="WhatsApp" target="_blank" data-tooltip="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            <div class="scroll-text">Gulir ke Bawah</div>
+        </div>
+        <div class="parallax-bg">
+            <div class="parallax-shape-1" data-speed="0.1"></div>
+            <div class="parallax-shape-2" data-speed="-0.2"></div>
+            <div class="parallax-shape-3" data-speed="0.15"></div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">01</span>
+                <h2>Tentang Saya</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+                    <p>Muhammad Fianto, 17 tahun, adalah siswa SMK Telkom yang tak hanya cerdas, tetapi juga berkarisma. Sebagai anggota OSIS di bidang keagamaan, ia tak hanya aktif dalam kegiatan organisasi, tetapi juga memegang prinsip kuat dalam menjalani hidup.</p>
+                    <p>Di balik kesibukannya, ia adalah seorang penggemar berat dunia coding. Dengan semangat otodidak, ia terus menggali ilmu, menantang dirinya sendiri dengan berbagai proyek pemrograman. Baginya, kode bukan sekadar barisan angka dan huruf, melainkan seni yang menghubungkan logika dan kreativitas.</p>
+                    <p>Sosoknya bukan hanya teknis, tetapi juga memiliki jiwa kepemimpinan yang kuat. Ia bisa serius ketika diperlukan, namun tetap asyik diajak berdiskusi. Kombinasi kecerdasan, dedikasi, dan keyakinan membuatnya jadi figur yang menarik di lingkungan sekolahnya.</p>
+                    
+                    <div class="tech-stack">
+                        <h3>Teknologi yang saya gunakan akhir-akhir ini:</h3>
+                        <ul class="tech-list">
+                            <li><i class="fas fa-caret-right"></i> JavaScript (ES6+)</li>
+                            <li><i class="fas fa-caret-right"></i> React.js</li>
+                            <li><i class="fas fa-caret-right"></i> Node.js</li>
+                            <li><i class="fas fa-caret-right"></i> Three.js</li>
+                            <li><i class="fas fa-caret-right"></i> WebGL</li>
+                            <li><i class="fas fa-caret-right"></i> Next.js</li>
+                            <li><i class="fas fa-caret-right"></i> TailwindCSS</li>
+                            <li><i class="fas fa-caret-right"></i> GraphQL</li>
+                        </ul>
+                    </div>
+                    <div class="resume-download">
+                        <a href="assets/resume.pdf" download class="btn primary-btn">
+                            <i class="fas fa-download"></i> Unduh CV
+                        </a>
+                    </div>
                 </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                <div class="about-image" data-aos="fade-left" data-aos-delay="300">
+                    <div class="image-container">
+                        <img src="assets/img/WhatsApp Image 2025-03-28 at 21.12.58_ea4e0260.jpg" alt="Nama Anda">
+                        <div class="image-outline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Keahlian -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">02</span>
+                <h2>Keahlian Saya</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skill-categories">
+                    <div class="skill-category active" data-category="frontend">Frontend</div>
+                    <div class="skill-category" data-category="backend">Backend</div>
+                    <div class="skill-category" data-category="design">Desain</div>
+                    <div class="skill-category" data-category="other">Lainnya</div>
+                </div>
+                
+                <div class="skill-bars-container">
+                    <div class="skill-set frontend active">
+                        <div class="skill-bar" data-aos="fade-right" data-aos-delay="100">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5/CSS3</span>
+                                <span class="skill-percentage">95%</span>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 95%"></div>
                             </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                        
+                        <div class="skill-bar" data-aos="fade-right" data-aos-delay="200">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">90%</span>
                             </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 90%"></div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                        
+                        <div class="skill-bar" data-aos="fade-right" data-aos-delay="300">
+                            <div class="skill-info">
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar" data-aos="fade-right" data-aos-delay="400">
+                            <div class="skill-info">
+                                <span class="skill-name">Three.js</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Set keahlian backend (awalnya tersembunyi) -->
+                    <div class="skill-set backend">
+                        <!-- Tambahkan keahlian backend di sini -->
+                    </div>
+                    
+                    <!-- Set keahlian desain (awalnya tersembunyi) -->
+                    <div class="skill-set design">
+                        <!-- Tambahkan keahlian desain di sini -->
+                    </div>
+                    
+                    <!-- Set keahlian lainnya (awalnya tersembunyi) -->
+                    <div class="skill-set other">
+                        <!-- Tambahkan keahlian lainnya di sini -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Proyek -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">03</span>
+                <h2>Proyek Saya</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="filter-container" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Desain</button>
+            </div>
+            
+            <div class="projects-wrapper" data-aos="fade-up" data-aos-delay="300">
+                <div class="projects-horizontal-scroll">
+                    <div class="project-card" data-category="web">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=2070&auto=format&fit=crop" alt="Pengelola Tugas Berbasis AI">
+                            <div class="project-overlay">
+                                <button class="view-project-btn" data-lightbox="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=2070&auto=format&fit=crop" data-title="Pengelola Tugas Berbasis AI">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <h3>Pengelola Tugas Berbasis AI</h3>
+                            <p>Aplikasi manajemen tugas dengan prioritisasi tugas berbasis AI dan pengingat cerdas.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop" alt="Pendamping Kebugaran VR">
+                            <div class="project-overlay">
+                                <button class="view-project-btn" data-lightbox="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1974&auto=format&fit=crop" data-title="Pendamping Kebugaran VR">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>React Native</span>
+                                <span>Firebase</span>
+                                <span>Redux</span>
+                            </div>
+                            <h3>Pendamping Kebugaran VR</h3>
+                            <p>Aplikasi mobile yang terintegrasi dengan program kebugaran VR untuk melacak kemajuan dan menyediakan rencana latihan yang dipersonalisasi.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="design">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" alt="Portofolio 3D Interaktif">
+                            <div class="project-overlay">
+                                <button class="view-project-btn" data-lightbox="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" data-title="Portofolio 3D Interaktif">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span>Three.js</span>
+                                <span>WebGL</span>
+                                <span>GSAP</span>
+                            </div>
+                            <h3>Portofolio 3D Interaktif</h3>
+                            <p>Portofolio 3D imersif yang menampilkan karya kreatif melalui pengalaman web interaktif.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator-horizontal">
+                    <div class="scroll-line">
+                        <div class="scroll-progress"></div>
+                    </div>
+                    <div class="scroll-arrows">
+                        <button class="scroll-arrow left"><i class="fas fa-arrow-left"></i></button>
+                        <button class="scroll-arrow right"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container" data-aos="fade-up" data-aos-delay="600">
+                <a href="#" class="btn primary-btn">Lihat Proyek Lainnya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Testimoni -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">04</span>
+                <h2>Testimoni</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="testimonial-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-slider">
+                    <div class="testimonial-item active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"Bekerja dengan Muhammad Fianto sangat menyenangkan. Keahlian teknis mereka, kreativitas, dan perhatian terhadap detail menghasilkan situs web yang sempurna merepresentasikan merek kami dan secara signifikan meningkatkan kehadiran online kami."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>CEO, TechInnovate</p>
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            Jl. Gubernur Sunandar, Jrebeng,
-                            <br />
-                            Sidomulyo, Kec. Krian, Kabupaten Sidoarjo, Jawa Timur 61262
-                        </p>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"Muhammad Fianto adalah pengembang luar biasa yang bekerja melebihi ekspektasi untuk memberikan hasil yang luar biasa. Kemampuan mereka untuk memahami kebutuhan kami dan menerjemahkannya menjadi situs web yang fungsional dan indah sangat mengesankan."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Brown">
+                                <div class="author-info">
+                                    <h4>Michael Brown</h4>
+                                    <p>Direktur Pemasaran, Elevate Studios</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/iantzzz_/"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Created By
-                            <a href="https://iantzzz.github.io/">iantzzz</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2025</small></div>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"Saya telah bekerja dengan banyak pengembang, tetapi Muhammad Fianto menonjol karena keahlian, profesionalisme, dan dedikasi mereka. Mereka tidak hanya memberikan situs web berkualitas tinggi tetapi juga memberikan wawasan berharga yang meningkatkan strategi digital kami secara keseluruhan."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez">
+                                <div class="author-info">
+                                    <h4>Emily Rodriguez</h4>
+                                    <p>Manajer Produk, NextGen Solutions</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                
+                <div class="testimonial-controls">
+                    <button class="prev-btn" aria-label="Testimoni sebelumnya"><i class="fas fa-chevron-left"></i></button>
+                    <div class="dots-container">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
                     </div>
+                    <button class="next-btn" aria-label="Testimoni berikutnya"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">05</span>
+        <h2>Hubungi Saya</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                    <h3>Mari Terhubung</h3>
+                    <p>Saat ini saya tersedia untuk pekerjaan freelance atau posisi penuh waktu. Jika Anda memiliki proyek yang ingin dimulai, membutuhkan bantuan saya, atau hanya ingin menyapa, silakan hubungi saya.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>muhammadfiantoo13@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Telepon</h4>
+                                <p>+62 851-8202-0474</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Lokasi</h4>
+                                <p>Jl. Gubernur Sunandar No.2, Jrebeng, Sidomulyo, Kec. Krian, Kabupaten Sidoarjo, Jawa Timur 61262, Indonesia</p>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/muhammad.fianto.3/" class="social-link tooltip" aria-label="Facebook" target="_blank" data-tooltip="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/iantzzz_/" class="social-link tooltip" aria-label="Instagram" target="_blank" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.link/bd45f6" class="social-link tooltip" aria-label="WhatsApp" target="_blank" data-tooltip="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-left" data-aos-delay="300">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                            <label for="name">Nama Anda</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                            <label for="email">Email Anda</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subjek" required>
+                            <label for="subject">Subjek</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Pesan Anda" rows="5" required></textarea>
+                            <label for="message">Pesan Anda</label>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn submit-btn">
+                            <span class="btn-text">Kirim Pesan</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+    </section>
+
+    <!-- Bagian Proyek GitHub -->
+    <section id="github" class="github">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">04</span>
+                <h2>Proyek GitHub</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="github-container">
+                <div class="github-stats" data-aos="fade-up" data-aos-delay="200">
+                    <div class="github-stat">
+                        <span class="stat-number" id="repoCount">0</span>
+                        <span class="stat-label">Repositori</span>
+                    </div>
+                    <div class="github-stat">
+                        <span class="stat-number" id="starsCount">0</span>
+                        <span class="stat-label">Bintang</span>
+                    </div>
+                    <div class="github-stat">
+                        <span class="stat-number" id="forksCount">0</span>
+                        <span class="stat-label">Fork</span>
+                    </div>
+                </div>
+                
+                <div class="github-repos" data-aos="fade-up" data-aos-delay="300">
+                    <div class="repo-loader">
+                        <div class="spinner"></div>
+                        <p>Memuat repositori...</p>
+                    </div>
+                    <div class="repos-grid" id="reposContainer"></div>
+                </div>
+                
+                <div class="github-link" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://github.com/Iantzzz" target="_blank" class="btn primary-btn">
+                        <i class="fab fa-github"></i> Lihat Profil GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <div class="logo-text">Portofolio<span>Saya</span></div>
+                    </a>
+                    <p>Menciptakan pengalaman digital yang membuat perbedaan.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Navigasi</h3>
+                        <ul>
+                            <li><a href="#about">Tentang</a></li>
+                            <li><a href="#skills">Keahlian</a></li>
+                            <li><a href="#projects">Proyek</a></li>
+                            <li><a href="#testimonials">Testimoni</a></li>
+                            <li><a href="#contact">Kontak</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h3>Sosial</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/muhammad.fianto.3/" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/iantzzz_/" target="_blank">Instagram</a></li>
+                            <li><a href="https://wa.link/bd45f6" target="_blank">WhatsApp</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Muhammad Fianto. Hak cipta dilindungi.</p>
+                <p>Didesain & Dibangun dengan <i class="fas fa-heart"></i></p>
+            </div>
         </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+    </footer>
+
+    <!-- Tombol Kembali ke Atas -->
+    <a href="#" class="back-to-top" aria-label="Kembali ke atas"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Script -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Tambahkan setelah tag pembuka <body> -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- Tambahkan setelah Bagian Tentang -->
+    <section class="achievements">
+        <div class="container">
+            <div class="achievements-grid">
+                <div class="achievement" data-aos="fade-up">
+                    <div class="achievement-icon">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
+                    <div class="counter" data-target="50">0</div>
+                    <h3>Proyek Selesai</h3>
+                </div>
+                
+                <div class="achievement" data-aos="fade-up" data-aos-delay="100">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="counter" data-target="15">0</div>
+                    <h3>Sertifikasi</h3>
+                </div>
+                
+                <div class="achievement" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="counter" data-target="120">0</div>
+                    <h3>Klien Puas</h3>
+                </div>
+                
+                <div class="achievement" data-aos="fade-up" data-aos-delay="300">
+                    <div class="achievement-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="counter" data-target="1500">0</div>
+                    <h3>Cangkir Kopi</h3>
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+    </section>
+</body>
 </html>
