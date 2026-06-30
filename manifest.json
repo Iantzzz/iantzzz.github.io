@@ -1,0 +1,21 @@
+{
+  "name": "Muhammad Fianto | Student. Developer. Visionary.",
+  "short_name": "MF Portfolio",
+  "description": "Full Stack Developer & Student at SMK Telkom — Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07070d",
+  "theme_color": "#07070d",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "development", "technology"],
+  "lang": "en-US",
+  "scope": "/"
+}
